@@ -1,0 +1,6 @@
+<!--pages/error/error.wxml-->
+<view class="thin-line"></view>
+<view class="warn">
+<image src="/static/images/icon/cry-220.png"  class="img" />
+<view class="text">{{message}}</view>
+</view>

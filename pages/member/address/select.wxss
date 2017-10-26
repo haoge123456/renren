@@ -1,0 +1,4 @@
+.fui-list-inner { border-right: 1px solid #d9d9d9; }
+.fui-list-angle { margin-right: 0; }
+.fui-list-angle wx-image { margin-left: 20rpx; }
+.fui-navbar .nav-item.btn { color:#fff; border-radius: 0; background:#c9121e;}

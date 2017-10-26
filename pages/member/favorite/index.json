@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "我的关注",
+  "navigationBarBackgroundColor": "#C9121E",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
+}

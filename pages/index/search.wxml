@@ -1,0 +1,16 @@
+<view class="search_bar">
+  <view bindtap="select" class="select">{{city}}
+    <!-- <image src="/static/images/icon/back.png" style="width:18px;height:20px;margin-bottom:-5px;margin-left:5px;"></image> -->
+  </view>
+  <view class="view_search">
+    <navigator url="/pages/goods/index/index">
+      <view class="view_searchbg">
+        <view class="view1">
+          <view class="line"></view>
+          <image src='/static/images/icon/search.png'></image>
+        </view>
+        <text bindtap="search" placeholder-style="color:#999999" class="input_search" placeholder="搜商品，找品牌">搜商品，找品牌</text>
+      </view>
+    </navigator>
+  </view>
+</view>

@@ -1,0 +1,461 @@
+body {
+    font-family: STHeiti,STXihei,Microsoft JhengHei,Microsoft YaHei,Arial,Tohoma,Helvetica;
+}
+/*容器总体布局为左右两列*/
+.container {
+  margin-top: 10rpx;
+	display: flex;
+	flex-direction: row;
+  height:100%;
+
+}
+
+/*侧边栏顶级分类给予固定宽度*/
+.sidebar {
+	width: 240rpx;
+}
+.sidebar .active {
+   color: #fff; 
+  background: #C9121E;
+  /* opacity: 0.7; */
+  border-radius: 10rpx;
+}
+/*text块状布局独占一行*/
+.sidebar text {
+  display:block;
+  border-top:0;
+  height:3em;
+  line-height:3em;
+  font-size:.8em;
+  background-color:#F3F3F3;
+  color: #333;
+  text-align: center
+}
+
+/*hight light*/
+.sidebar text.highlight {
+	background-color: #f3f5f7;
+	color: #f23131;
+	border-right: 0;
+}
+
+.main {
+	width: 100%;
+	margin-left: 20rpx;
+	display: flex;
+	flex-direction: column;
+	 /* z-index:9; */
+	height:800rpx; 
+}
+
+/*category banner*/
+.banner {
+	width: 100%;
+	height: 180rpx;
+	margin: 20rpx 0;
+}
+
+/*网格布局子类九宫格分布*/
+.gridview {
+	background-color: #ffffff;
+	height: 100%;
+}
+
+/*向左流动*/
+.gridview dl {
+	float: left;
+	margin: 30rpx;
+}
+
+/*图片*/
+.gridview dt image {
+	width: 120rpx;
+	height: 120rpx;
+}
+
+/*文字*/
+.gridview dd text {
+	color: #6c6c6c;
+	font-size: 12px;
+	text-align: center;
+	display: block;
+	line-height: 20px;
+}
+
+page{ 
+ display: flex; 
+ flex-direction: column; 
+ height: 100%; 
+} 
+.navbar{ 
+ flex: none; 
+ display: flex; 
+ background: #fff;
+ margin-top: 100rpx;
+ border-bottom:1px solid #e5e5e5;
+} 
+.navbar .item{ 
+ position: relative; 
+ flex: auto; 
+ text-align: center;
+  font-size:0.9em;
+  padding:.5em 0;
+} 
+.navbar .item.active{ 
+ color: #DE1010; 
+} 
+.navbar .item.active:after{ 
+ content: ""; 
+ display: block; 
+ position: absolute; 
+ bottom: 0; 
+ left: 0; 
+ right: 0; 
+ height: 5rpx; 
+ background: #D90000; 
+}
+
+
+/*外部容器*/
+.container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 
+ .container1 view:nth-child(1){
+    margin-top: 60rpx; 
+ }
+/*整体列表*/
+.carts-list {
+  display: flex;
+  flex-direction: column;
+}
+ 
+/*每行单元格*/
+.carts-item {
+  display: flex;
+  flex-direction: row;
+  height:150rpx;
+  /*width属性解决标题文字太短而缩略图偏移*/
+  width:100%;
+  border-bottom: 1px solid #eee;
+  padding: 30rpx 0;
+}
+ 
+/*左部图片*/
+.carts-image {
+  width:150rpx;
+  height:150rpx;
+}
+ 
+ 
+/*右部描述*/
+.carts-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color:gray;
+}
+ 
+/*右上部分标题*/
+.carts-title {
+  
+  font-size: 30rpx;
+  overflow:hidden;
+  text-overflow:ellipsis;
+
+  width:13em;
+  display:block;
+}
+ 
+/*右下部分价格与数量*/
+.carts-subtitle {
+  font-size: 25rpx;
+  color:darkgray;
+  padding: 0 20rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+ 
+/*价格*/
+.carts-price {
+  color: #E91A21;
+  margin-top:20rpx;
+}
+.carts-price text {
+  font-size:1.5em;
+}
+
+/*主容器*/
+.stepper {  
+  margin:0 10px; 
+} 
+  
+/*加号和减号*/
+.stepper text { 
+  width: 19px; 
+  line-height: 26px; 
+  text-align: center;
+} 
+  
+/*数值*/
+.stepper input { 
+  width: 40px; 
+  height: 26px; 
+  float: left; 
+  margin: 0 auto; 
+  text-align: center; 
+  font-size: 17px; 
+  /*给中间的input设置左右边框即可*/
+  border-left: 0.5px solid #ccc; 
+  border-right: 0.5px solid #ccc; 
+} 
+  
+/*普通样式*/
+.stepper text{ 
+  color:#C9121E;
+  border:1px solid gray;
+  border-radius:50%;
+  line-height:1em;
+  height:1em;
+  width:1em;
+  font-size:2em;
+  text-align:center;
+  display:block;
+  float:right;
+} 
+ .stepper label{
+  display:block;
+  float:right;
+  font-size:1.3em;
+  line-height:1.8em;
+  color:black;
+  width:2em;
+  text-align:center;
+ }
+.stepper .left{ 
+  color:red;
+  border:1px solid gray;
+}  
+.stepper .right{ 
+  color:white;
+  background: #C9121E;
+  border:1px solid #C9121E;
+} 
+/*禁用样式*/
+.stepper .disabled{ 
+  color: #ccc; 
+}
+
+/* 排序 */
+
+page1{  
+  display: flex;  
+  flex-direction: column;  
+  height: 100%;  
+}  
+.navbar1{  
+  flex: none;  
+  display: flex;  
+  background: #fff; 
+  border-bottom:1px solid #e5e5e5; 
+  padding:10rpx 0;
+  position:fixed;
+width:70%;
+
+}  
+.navbar1 .item1{  
+  position:relative;
+  flex:auto;
+  text-align:center;
+  line-height:2em;
+  font-size:.9em;
+}  
+.navbar1 .item1:first-child{
+  border-right:1px solid #e5e5e5;
+}
+.navbar1 .active {
+  color: #C9121E;
+  border-bottom:1px solid #fff;
+}
+.navbar1 .item1.active1{  
+  color: #D90000;  
+}  
+.navbar1 .item1.active1:after{  
+  content: "";  
+  display: block;  
+  position: absolute;  
+  bottom: 0;  
+  left: 0;  
+  right: 0;  
+  height: 4rpx;  
+  background: #D90000;  
+}
+.navbar1 image {
+  width:1em;
+  height:1em;
+  transform:rotate(270deg);
+  margin-left:.2em;
+}
+.navbar1 .active image {
+  transform:rotate(90deg);
+}
+.order-area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  margin: 20rpx 0;
+  padding: 20rpx 0;
+}
+
+.order {
+	width: 50%;
+	text-align: center;
+}
+
+.order image {
+	width: 90rpx;
+	height: 90rpx;
+}
+
+.order text{
+	display: block;
+	font-size: 30rpx;
+	color: #333;
+}
+
+/*全部属性的主盒子*/  
+ .commodity_attr_list {  
+  background: #fff;  
+  padding: 15rpx;  
+  font-size: 26rpx;  
+  overflow: hidden;  
+  width: 100%; 
+  z-index: 10; 
+}   
+/*每组属性的主盒子*/  
+.attr_box {  
+  width: 100%;  
+  overflow: hidden;  
+  border-bottom: 1rpx solid #ececec;  
+  margin-left: -25rpx;
+  padding:5rpx 0;
+  margin-top:32px;
+background:#fff;
+position:fixed;
+
+
+}  
+/*属性名*/  
+.attr_name {  
+  width: 20%;  
+  float: left;  
+  padding: 15rpx 0;  
+}  
+/*属性值*/  
+.attr_value_box {    
+  float: left;  
+  padding: 11rpx 0;  
+  overflow: hidden; 
+  width: 25%; 
+}  
+.attr_box .active .attr_value{
+  border: 1rpx solid #C9121E;
+  color:#C9121E;
+}
+/*每个属性值*/  
+.attr_value { 
+  width:70%;
+  float:left;
+  padding:8rpx;
+  margin:6rpx 20rpx;
+  border:1rpx solid gray;
+  border-radius:6rpx;
+  text-align:center;
+}  
+.attr_value.attr:active{
+  color: red;
+}
+/*每个属性选中的当前样式*/  
+.attr_value_active {  
+  background: #FFCC00;  
+  border-radius: 10rpx;  
+  color: #fff;  
+  padding: 0 10rpx;  
+}  
+/*禁用属性*/  
+.attr_value_disabled {  
+  color: #ccc;  
+}  
+
+/* 提示  */
+.empty-tip{
+  padding:50rpx 0;
+  text-align:center;
+  font-size:.8em;
+  line-height:2em;
+  color:gray;
+
+}
+/*button*/  
+.btn-area {  
+  margin: 1.17647059em 15px 0.3em;  
+}  
+  
+.btn {  
+  margin-top: 15px;  
+  background-color:#FFCC00;  
+  color: #fff;  
+}  
+.btn:first-child {  
+  margin-top: 0;  
+}
+
+.footer {
+	
+	display: flex; 
+	flex-direction: row; 
+	justify-content: space-between;
+	position: fixed;
+	bottom: 18rpx;
+	left: 60rpx;
+}
+
+.footer .contact image{
+	position: fixed;
+	bottom: 140rpx;
+	right: 40rpx;
+	width: 120rpx;
+	height: 120rpx;
+  z-index: 999999999999999999;
+}
+.totaldata{
+  position: absolute;
+  bottom:60rpx;
+  left: 100rpx;
+  font-size: 24rpx;
+    color: #ffffff;
+    background-color: #ff2600;
+    border-radius: 0.4rem;
+        text-align: center;
+    min-width: 1rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+}
+contact-button {
+display:inline-block;
+line-height:0;
+/* z-index:9999999999; */
+width:80rpx;
+height:80rpx;
+position:fixed;
+right:40rpx;
+bottom:140rpx;
+opacity: 0;
+}

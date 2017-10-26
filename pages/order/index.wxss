@@ -1,0 +1,11 @@
+body{ background:#f7f7f7; }
+.goods-info{ width: auto }
+.order .contain{ margin-top: 90rpx; }
+.order .btn{ margin:10rpx 0 10rpx 20rpx;   line-height: 80rpx; }
+.order .empty{ padding:260rpx 150rpx; font-size: 34rpx; }
+.order .empty .btn{ padding: 20rpx 20rpx; height:80rpx; line-height: 40rpx; font-size: 34rpx; }
+.order .light{ height: 260rpx; width: 240rpx; margin-bottom: 55rpx; }
+.order .text-cancel{ padding: 10rpx; }
+.order .order-num{ -webkit-flex: 1; flex: 1; }
+.fui-tab-scroll .item { padding: 0 30rpx; }
+.order .fui-list-inner .subtitle { line-height:44rpx; }

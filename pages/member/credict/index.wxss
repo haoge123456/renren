@@ -1,0 +1,5 @@
+.btn.btn-success.disabled { 
+  background:gray;
+  color:#fff;
+  border:1px solid gray;
+ }

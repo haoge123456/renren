@@ -1,0 +1,185 @@
+/* pages/point_shop/index.wxss */
+.tab-h {
+  /* height: 80rpx; */
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  line-height: 80rpx;
+  /* background: #f7f7f7; */
+  font-size: 16px;
+  white-space: nowrap;
+  
+
+  left: 0;
+  z-index: 99;
+  border-bottom:1px solid #e5e5e5;
+}
+
+.tab-item {
+  padding: 0 36rpx;
+  display: inline-block;
+}
+
+.tab-h .active {
+  color: #E20303;
+  position: relative;
+  border-bottom:1rpx solid #E20303;
+}
+
+.tab-h .active:after {
+  content: "";
+  display: block;
+  height: 3rpx;
+  width: 100%;
+  background: #E20303;
+  position: absolute;
+  bottom: 0;
+  left: 5rpx;
+  border-radius: 16rpx;
+}
+
+.item-ans {
+  width: 100%;
+  display: flex;
+  flex-grow: row no-wrap;
+  justify-content: space-between;
+  padding: 30rpx;
+  box-sizing: border-box;
+  height: 180rpx;
+  align-items: center;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.avatar {
+  width: 120rpx;
+  height: 100rpx;
+  position: relative;
+  padding-right: 30rpx;
+}
+
+.avatar .img {
+  width: 100%;
+  height: 100%;
+}
+
+.avatar .doyen {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  bottom: -2px;
+  right: 20rpx;
+}
+
+.expertInfo {
+  font-size: 12px;
+  flex-grow: 2;
+  color: #b0b0b0;
+  line-height: 1.5em;
+}
+
+.expertInfo .name {
+  font-size:1.2em;
+  color: #000;
+  margin-bottom: 6px;
+  width: 220px;
+  overflow:hidden;
+text-overflow:ellipsis;/*文字溢出的部分隐藏并用省略号代替*/
+white-space:nowrap;
+}
+
+.expertInfo .name text {
+
+}
+
+.tag {
+  color: red;
+}
+
+.answerHistory {
+  text-decoration: line-through;
+}
+
+.askBtn {
+  width: 120rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  font-size: 12px;
+ 
+  border: 1px solid #C9121E;
+  color: #C9121E;
+}
+
+.tab-content {
+  margin-top: 80rpx;
+}
+
+.scoll-h {
+  height: 100%;
+}
+
+.main-goods {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: 1px solid #eee;
+}
+
+.main-goods .single-goods {
+  width: 50%;
+}
+
+.main-goods image {
+  width: 220rpx;
+  height: 220rpx;
+  display: block;
+  margin: 20rpx auto;
+}
+
+.main-goods .title {
+  display: block;
+  color: #999;
+  font-size: 28rpx;
+  margin: 10rpx 6rpx;
+  margin-left: 20rpx;
+  line-height: 28rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  flex-shrink: 0;
+}
+
+.main-goods .summary {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+}
+
+.main-goods .summary text {
+  font-size: 28rpx;
+  margin: 10rpx 20rpx;
+}
+
+.main-goods .summary .price {
+  color: red;
+}
+
+.main-goods .summary .sale {
+  color: gray;
+  text-decoration: line-through;
+}
+.member-head { height: 180rpx; background: #C9121E; padding-top: 40rpx; position: relative; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; -webkit-justify-content: space-between; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; }
+.member-head .setting { height: 40rpx; width: 40rpx; overflow: hidden; position: absolute; top: 10rpx; right:10rpx }
+.member-head .setting wx-image { height: 40rpx; width: 40rpx; vertical-align: top; }
+.member-head .child { width: 20%; text-align: center; }
+.member-head .child.userinfo { width: 20%; color: #fff; padding-top: 20rpx; text-align:left;
+}
+.member-head .child.userinfo .avatar { height: 96rpx; width: 96rpx; background: #fff; margin: auto; border-radius: 96rpx; border: 4rpx solid #fff; }
+.member-head .child.userinfo .avatar wx-image { height: 96rpx; width: 96rpx; border-radius: 96rpx; display: block; }
+.member-head .child.userinfo .nickname { height: 40rpx; padding-top: 8rpx; font-size: 24rpx; color: inherit; text-align: left; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+.member-head .child.userinfo .level { font-size: 24rpx; color: inherit; text-align: left; }
+.member-head .child .title { padding-top: 48rpx; font-size: 28rpx; color: #fff; text-align: right; }
+.member-head .child .number { font-size: 28rpx;padding-top:48rpx; color: #fef31f; text-align: left; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+.member-head .child .btn { width: 104rpx; height: 40rpx;margin-top:48rpx; padding: 0; margin: 8rpx auto 0; color: #fff; font-size: 24rpx; line-height: 40rpx; text-align: center; border-radius: 40rpx; border: 2rpx solid #fff; }

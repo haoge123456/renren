@@ -1,0 +1,89 @@
+view{display: inline-block;}
+.fui-cell-group{ margin-top: 40rpx; border: none; }
+.cartlist{ margin-top: -2rpx; }
+.price{ text-align:right;
+display:inline-block;
+color:red;
+font-size:26rpx;
+position:absolute;
+left:90px;
+top:80rpx;
+line-height:70rpx;
+}
+.left{ left: -100rpx }
+wx-checkbox{ padding-right:20rpx }
+.empty{ padding:260rpx 150rpx; }
+.light{ height: 260rpx; width: 240rpx }
+.text-cancel{ padding-top:60rpx; font-size: 34rpx; }
+.fui-list-inner .car_subtitle { position:relative; font-size:26rpx; color:#444; }
+.fui-number{ height:50rpx; width: 160rpx; top:47px;
+right:17px;
+}
+.minus,.plus{ width: 50rpx; height: 50rpx; font-size: 40rpx; line-height: 50rpx; border-radius: 50%;color: #fff;}
+ .minus{background-color: #d9d9d9;} 
+.plus{background-color: #C9121E;}
+.fui-list-angle { margin-right:0; }
+view{  
+    box-sizing: border-box;  
+}  
+.item-box{  
+    width: 750rpx;  
+    margin: 0 auto 100rpx;  
+    padding:0rpx 0;  
+}  
+.items{  
+    width: 100%;  
+}  
+.item{  
+    position: relative;  
+    border-top: 2rpx solid #eee;  
+    height: 150rpx;  
+    line-height: 140rpx;  
+    overflow: hidden;  
+}  
+.item:last-child{  
+    border-bottom: 2rpx solid #eee;  
+}  
+.inner{  
+    position: absolute;  
+    top:0;  
+}  
+.inner.txt{  
+    background-color: #fff;  
+    width: 100%;  
+    z-index: 5;  
+  
+    transition: left 0.2s ease-in-out;  
+    white-space:nowrap;  
+    overflow:hidden;  
+    text-overflow:ellipsis;  
+}  
+.inner.del{  
+    background-color: #e64340;  
+    width: 180rpx;text-align: center;  
+    z-index: 4;  
+    right: 0;  
+    color: #fff  
+}  
+.item-icon{  
+    width: 64rpx;  
+    vertical-align: middle;  
+    margin-right: 16rpx  
+}  
+.thumb{  
+    width: 200px;  
+    height: 200px;  
+    -webkit-overflow-scrolling: touch;  
+    overflow: scroll;  
+} 
+.subtitle{
+  margin-left: 20rpx;
+
+    margin: 10rpx;
+  font-size: 26rpx;
+  overflow:hidden;
+  text-overflow:ellipsis;
+
+  width:15em;
+
+} 

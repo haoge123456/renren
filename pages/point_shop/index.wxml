@@ -1,0 +1,50 @@
+<!--pages/point_shop/index.wxml-->
+<view>
+    <view class='member-head'>
+     
+   
+      <view class='child userinfo'>
+        <view class='avatar' style='padding-right:0rpx;'>
+          <image class='icon' src='{{member.avatar || "/static/images/noface.png"}}'></image>
+        </view>
+       
+      </view><view class='child userinfo'> <view class='nickname'>{{member.nickname || "未更新用户信息"}}</view>
+        <view class='level'>{{member.levelname}}</view></view>
+      <view class='child'>
+        <view class='title'>{{member.credittext}}</view>
+        </view> 
+         <view class='child'>
+        <view class='number'>{{member.credit1}}</view> 
+        </view> 
+         <view class='child' style='margin-top:48rpx;'>
+        <block wx:if='{{member.open_recharge}}'>
+          <navigator class='btn' hoverClass='btn-hover' url='/pages/member/credict/index'>兑换</navigator>
+        </block>
+      </view>
+    </view>
+  <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+    <view  wx:for="{{navbar}}" class="tab-item {{currentTab==index?'active':''}}" data-current="{{index}}" bindtap="swichNav">{{item.name}}</view>
+  </scroll-view>
+  <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab" style="height:{{winHeight}}rpx">
+    <swiper-item wx:for="{{navbar.length}}">
+      <scroll-view scroll-y="true" class="scoll-h">
+        <block wx:for="{{goods[navbar[index].id]}}" wx:key="*this">
+          <view class="item-ans">
+            <image class="avatar" src="{{item.thumb}}"></image>
+            <view class="expertInfo">
+              <view class="name">{{item.title}}</view>
+              <view class="tag">{{item.credit}}积分</view>
+              <view class="answerHistory">售价：￥{{item.price}} </view>
+            </view>
+            <navigator url="/pages/goods/credit/index?id={{item.id}}" class="askBtn">详情</navigator>
+          </view>
+        </block>
+      </scroll-view>
+    </swiper-item>
+  </swiper>
+   
+    <view class='fui-loading empty'>
+      <view class='text'>别拉了，我是有底线的</view>
+    </view>
+
+</view>
