@@ -55,6 +55,7 @@ App({
 			return void(t && "function" == typeof t && t(a));
 		wx.login({
 			success : function (o) {
+        
 				if (!o.code)
 					return void e.alert("获取用户登录态失败:" + o.errMsg);
 				e.post("wxapp/login", {
@@ -122,11 +123,12 @@ App({
     lat:'',
     lng:'',
     appid: "wx57eac30efa06649b",
-    api: "https://xx.shopjoy.top/app/ewei_shopv2_api.php?i=3",
-    approot: "https://xx.shopjoy.top/addons/ewei_shopv2/",
-    // api: "https://demo.shopjoy.top/app/ewei_shopv2_api.php?i=3",
-    // approot: "https://demo.shopjoy.top/addons/ewei_shopv2/",
+    // api: "https://xx.shopjoy.top/app/ewei_shopv2_api.php?i=3",
+    // approot: "https://xx.shopjoy.top/addons/ewei_shopv2/",
+    api: "https://demo.shopjoy.top/app/ewei_shopv2_api.php?i=3",
+    approot: "https://demo.shopjoy.top/addons/ewei_shopv2/",
 		userInfo : null,
-    city: '定位中...'
+    city: '定位中...',
+    cityid:0
 	}
 })
